@@ -2754,20 +2754,19 @@ input, select, textarea {
 	}
 
 		.spotlight .image {
-			width: 30%;
-			border-radius: 100%;
+			width: 200%;
 			margin: 0 3em 0 0;
 			display: block;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
 				width: 100%;
+				height: 100%;
 			}
 
 		.spotlight .content {
-			width: 70%;
+			width: 75%;
 		}
 
 			.spotlight .content > :last-child {
