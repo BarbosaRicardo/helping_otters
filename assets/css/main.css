@@ -25,7 +25,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, .flexing {
 	display: block;}
 
 body {
@@ -3856,6 +3856,13 @@ input, select, textarea {
 			margin: -3.5em 4em 0 0;
 		}
 
+		#header .content .flexing {
+			display: flex;
+			justify-content: flex-end;
+			align-items: baseline;
+			font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace; font-size: .9em; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26px;
+		}
+
 			#header .content > :last-child {
 				margin-bottom: 0;
 			}
@@ -3916,6 +3923,17 @@ input, select, textarea {
 						-ms-justify-content: center;
 						justify-content: center;
 					}
+				
+					#header .flexing {
+						margin: -2em 4em 0 0;
+					}
+	
+						#header .flexing .actions {
+							-moz-justify-content: center;
+							-webkit-justify-content: center;
+							-ms-justify-content: center;
+							justify-content: center;
+						}		
 
 		}
 
@@ -3931,6 +3949,13 @@ input, select, textarea {
 
 				#header .content {
 					display: block;
+					width: 100%;
+					text-align: center;
+					margin: 0 0 2em 0;
+				}
+
+				#header .content .flexing {
+					display: inline-block;
 					width: 100%;
 					text-align: center;
 					margin: 0 0 2em 0;
@@ -3965,7 +3990,7 @@ input, select, textarea {
 				padding: 2em 2em 0.1em 2em ;
 			}
 
-				#header .content {
+				#header .content .flexing {
 					margin: 0 2em 2em 0;
 				}
 
@@ -4022,7 +4047,7 @@ input, select, textarea {
 			background-attachment: scroll, scroll;
 		}
 
-		body.is-preload #header .content {
+		body.is-preload #header .content .flexing{
 			-moz-transform: translateX(2em);
 			-webkit-transform: translateX(2em);
 			-ms-transform: translateX(2em);
@@ -4044,7 +4069,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) and (orientation: portrait) {
 
-		body.is-preload #header .content {
+		body.is-preload #header .content .flexing{
 			-moz-transform: none;
 			-webkit-transform: none;
 			-ms-transform: none;
